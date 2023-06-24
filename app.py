@@ -17,5 +17,8 @@ rainfall = st.slider(label="Select Rainfall Level",min_value=10.0,max_value=300.
 lis = np.array([[N,P,K,temp,humidity,ph,rainfall]])
 
 with st.expander("Suggested crop"):
-    result = labels_dic[model.predict(lis)[0]]
-    st.success(result)
+    if lis.max() > 0:
+        result = labels_dic[model.predict(lis)[0]]
+        st.success(result)
+    else:
+        st.warning("Select values")

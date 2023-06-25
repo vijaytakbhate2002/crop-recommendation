@@ -10,7 +10,7 @@ N = st.slider(label="Select Nitrogen level",min_value=0.0,max_value=200.0)
 P = st.slider(label="Select Phosphorus Level",min_value=0.0,max_value=200.0)
 K = st.slider(label="Select Potassium Level",min_value=0.0,max_value=250.0)
 temp = st.slider(label="Select temperature Level",min_value=0.0,max_value=60.0)
-humidity = st.slider(label="Select Potassium Level",min_value=0.0,max_value=150.0)
+humidity = st.slider(label="Select humidity Level",min_value=0.0,max_value=150.0)
 ph = st.slider(label="Select ph Level",min_value=0.0,max_value=14.0)
 rainfall = st.slider(label="Select Rainfall Level",min_value=0.0,max_value=300.0)
 
